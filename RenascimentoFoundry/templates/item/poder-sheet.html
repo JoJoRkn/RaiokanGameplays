@@ -1,0 +1,89 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{item.name}}" placeholder="Nome"/>
+      </h1>
+    </div>
+  </header>
+
+  {{!-- Abas da Ficha --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="descricao">Descrição</a>
+    <a class="item" data-tab="atributos">Atributos</a>
+  </nav>
+
+  {{!-- Corpo da Ficha --}}
+  <section class="sheet-body">
+    {{!-- Aba de Descrição --}}
+    <div class="tab" data-group="primary" data-tab="descricao">
+      <div class="form-group">
+        <label>Descrição</label>
+        <textarea name="system.descricao">{{system.descricao}}</textarea>
+      </div>
+    </div>
+
+    {{!-- Aba de Atributos --}}
+    <div class="tab" data-group="primary" data-tab="atributos">
+      <div class="form-group">
+        <label>NEX Requisito</label>
+        <select name="system.nexRequisito">
+          <option value="5" {{#if (eq system.nexRequisito 5)}}selected{{/if}}>5%</option>
+          <option value="10" {{#if (eq system.nexRequisito 10)}}selected{{/if}}>10%</option>
+          <option value="15" {{#if (eq system.nexRequisito 15)}}selected{{/if}}>15%</option>
+          <option value="20" {{#if (eq system.nexRequisito 20)}}selected{{/if}}>20%</option>
+          <option value="25" {{#if (eq system.nexRequisito 25)}}selected{{/if}}>25%</option>
+          <option value="30" {{#if (eq system.nexRequisito 30)}}selected{{/if}}>30%</option>
+          <option value="35" {{#if (eq system.nexRequisito 35)}}selected{{/if}}>35%</option>
+          <option value="40" {{#if (eq system.nexRequisito 40)}}selected{{/if}}>40%</option>
+          <option value="45" {{#if (eq system.nexRequisito 45)}}selected{{/if}}>45%</option>
+          <option value="50" {{#if (eq system.nexRequisito 50)}}selected{{/if}}>50%</option>
+          <option value="55" {{#if (eq system.nexRequisito 55)}}selected{{/if}}>55%</option>
+          <option value="60" {{#if (eq system.nexRequisito 60)}}selected{{/if}}>60%</option>
+          <option value="65" {{#if (eq system.nexRequisito 65)}}selected{{/if}}>65%</option>
+          <option value="70" {{#if (eq system.nexRequisito 70)}}selected{{/if}}>70%</option>
+          <option value="75" {{#if (eq system.nexRequisito 75)}}selected{{/if}}>75%</option>
+          <option value="80" {{#if (eq system.nexRequisito 80)}}selected{{/if}}>80%</option>
+          <option value="85" {{#if (eq system.nexRequisito 85)}}selected{{/if}}>85%</option>
+          <option value="90" {{#if (eq system.nexRequisito 90)}}selected{{/if}}>90%</option>
+          <option value="95" {{#if (eq system.nexRequisito 95)}}selected{{/if}}>95%</option>
+          <option value="99" {{#if (eq system.nexRequisito 99)}}selected{{/if}}>99%</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Origem</label>
+        <select name="system.origem">
+          <option value=""></option>
+          {{#each origens as |origem|}}
+          <option value="{{origem}}" {{#if (eq ../system.origem origem)}}selected{{/if}}>{{origem}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Trilha</label>
+        <select name="system.trilha">
+          <option value=""></option>
+          {{#each trilhas as |trilha|}}
+          <option value="{{trilha}}" {{#if (eq ../system.trilha trilha)}}selected{{/if}}>{{trilha}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Custo</label>
+        <input type="text" name="system.custo" value="{{system.custo}}"/>
+      </div>
+      <div class="form-group">
+        <label>Ação</label>
+        <select name="system.acao">
+          <option value=""></option>
+          <option value="Padrão" {{#if (eq system.acao "Padrão")}}selected{{/if}}>Padrão</option>
+          <option value="Movimento" {{#if (eq system.acao "Movimento")}}selected{{/if}}>Movimento</option>
+          <option value="Completa" {{#if (eq system.acao "Completa")}}selected{{/if}}>Completa</option>
+          <option value="Reação" {{#if (eq system.acao "Reação")}}selected{{/if}}>Reação</option>
+          <option value="Livre" {{#if (eq system.acao "Livre")}}selected{{/if}}>Livre</option>
+        </select>
+      </div>
+    </div>
+  </section>
+</form>

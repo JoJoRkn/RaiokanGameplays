@@ -1,0 +1,255 @@
+{
+  "Actor": {
+    "types": ["personagem", "npc"],
+    "templates": {
+      "base": {
+        "nex": 5,
+        "atributos": {
+          "agilidade": {
+            "valor": 1,
+            "mod": 0
+          },
+          "forca": {
+            "valor": 1,
+            "mod": 0
+          },
+          "intelecto": {
+            "valor": 1,
+            "mod": 0
+          },
+          "presenca": {
+            "valor": 1,
+            "mod": 0
+          },
+          "vigor": {
+            "valor": 1,
+            "mod": 0
+          }
+        },
+        "recursos": {
+          "pv": {
+            "valor": 10,
+            "max": 10
+          },
+          "pe": {
+            "valor": 2,
+            "max": 2
+          },
+          "san": {
+            "valor": 15,
+            "max": 15
+          }
+        },
+        "defesa": 10
+      }
+    },
+    "personagem": {
+      "templates": ["base"],
+      "biografia": "",
+      "conceito": "",
+      "patente": "Recruta",
+      "origem": "",
+      "trilha": "",
+      "pericias": {
+        "acrobacia": {
+          "treinamento": 0,
+          "atributo": "agilidade",
+          "valor": 0
+        },
+        "adestramento": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        },
+        "artes": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        },
+        "atletismo": {
+          "treinamento": 0,
+          "atributo": "forca",
+          "valor": 0
+        },
+        "atualidades": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "ciencias": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "crime": {
+          "treinamento": 0,
+          "atributo": "agilidade",
+          "valor": 0
+        },
+        "diplomacia": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        },
+        "enganacao": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        },
+        "fortitude": {
+          "treinamento": 0,
+          "atributo": "vigor",
+          "valor": 0
+        },
+        "furtividade": {
+          "treinamento": 0,
+          "atributo": "agilidade",
+          "valor": 0
+        },
+        "iniciativa": {
+          "treinamento": 0,
+          "atributo": "agilidade",
+          "valor": 0
+        },
+        "intimidacao": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        },
+        "intuicao": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "investigacao": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "luta": {
+          "treinamento": 0,
+          "atributo": "forca",
+          "valor": 0
+        },
+        "medicina": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "ocultismo": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "percepcao": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        },
+        "pontaria": {
+          "treinamento": 0,
+          "atributo": "agilidade",
+          "valor": 0
+        },
+        "profissao": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "reflexos": {
+          "treinamento": 0,
+          "atributo": "agilidade",
+          "valor": 0
+        },
+        "religiao": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        },
+        "sobrevivencia": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "tatica": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "tecnologia": {
+          "treinamento": 0,
+          "atributo": "intelecto",
+          "valor": 0
+        },
+        "vontade": {
+          "treinamento": 0,
+          "atributo": "presenca",
+          "valor": 0
+        }
+      },
+      "grausTreinamento": {
+        "total": 4,
+        "usados": 0,
+        "restantes": 4
+      },
+      "pontosAtributo": {
+        "total": 4,
+        "usados": 0,
+        "restantes": 4
+      }
+    },
+    "npc": {
+      "templates": ["base"],
+      "tipo": "",
+      "ameaca": ""
+    }
+  },
+  "Item": {
+    "types": ["arma", "protecao", "item", "poder", "origem", "trilha"],
+    "templates": {
+      "base": {
+        "descricao": ""
+      },
+      "equipamento": {
+        "patente": "Recruta",
+        "preco": 0,
+        "peso": 0
+      }
+    },
+    "arma": {
+      "templates": ["base", "equipamento"],
+      "dano": "",
+      "tipo": "",
+      "alcance": "",
+      "critico": "20/x2",
+      "especial": ""
+    },
+    "protecao": {
+      "templates": ["base", "equipamento"],
+      "defesa": 0,
+      "penalidade": 0
+    },
+    "item": {
+      "templates": ["base", "equipamento"],
+      "quantidade": 1
+    },
+    "poder": {
+      "templates": ["base"],
+      "nexRequisito": 5,
+      "origem": "",
+      "trilha": "",
+      "custo": "",
+      "acao": ""
+    },
+    "origem": {
+      "templates": ["base"],
+      "poderes": []
+    },
+    "trilha": {
+      "templates": ["base"],
+      "classe": "",
+      "nexRequisito": 5,
+      "poderes": []
+    }
+  }
+}

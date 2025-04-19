@@ -1,0 +1,48 @@
+{
+  "name": "renascimento",
+  "title": "Renascimento RPG",
+  "description": "Sistema Renascimento para Ordem Paranormal no Foundry VTT",
+  "version": "1.0.0",
+  "author": "Seu Nome",
+  "minimumCoreVersion": "9.0.0",
+  "compatibleCoreVersion": "10.291",
+  "esmodules": ["scripts/renascimento.js"],
+  "styles": ["css/renascimento.css"],
+  "packs": [
+    {
+      "name": "origens",
+      "label": "Origens",
+      "path": "packs/origens.db",
+      "type": "Item"
+    },
+    {
+      "name": "trilhas",
+      "label": "Trilhas",
+      "path": "packs/trilhas.db",
+      "type": "Item"
+    },
+    {
+      "name": "equipamentos",
+      "label": "Equipamentos",
+      "path": "packs/equipamentos.db",
+      "type": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "gridDistance": 1.5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "recursos.pv",
+  "secondaryTokenAttribute": "recursos.san",
+  "initiative": "pericias.iniciativa.valor",
+  "url": "https://github.com/seu-usuario/renascimento",
+  "manifest": "https://raw.githubusercontent.com/seu-usuario/renascimento/master/system.json",
+  "download": "https://github.com/seu-usuario/renascimento/archive/v1.0.0.zip",
+  "license": "LICENSE.txt",
+  "socket": true
+}

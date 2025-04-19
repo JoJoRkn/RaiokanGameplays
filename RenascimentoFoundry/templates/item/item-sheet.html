@@ -1,0 +1,44 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{item.name}}" placeholder="Nome"/>
+      </h1>
+    </div>
+  </header>
+
+  {{!-- Abas da Ficha --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="descricao">Descrição</a>
+    <a class="item" data-tab="atributos">Atributos</a>
+  </nav>
+
+  {{!-- Corpo da Ficha --}}
+  <section class="sheet-body">
+    {{!-- Aba de Descrição --}}
+    <div class="tab" data-group="primary" data-tab="descricao">
+      <div class="form-group">
+        <label>Descrição</label>
+        <textarea name="system.descricao">{{system.descricao}}</textarea>
+      </div>
+    </div>
+
+    {{!-- Aba de Atributos --}}
+    <div class="tab" data-group="primary" data-tab="atributos">
+      <div class="form-group">
+        <label>Quantidade</label>
+        <input type="text" name="system.quantidade" value="{{system.quantidade}}" data-dtype="Number"/>
+      </div>
+      <div class="form-group">
+        <label>Patente</label>
+        <select name="system.patente">
+          <option value="Recruta" {{#if (eq system.patente "Recruta")}}selected{{/if}}>Recruta</option>
+          <option value="Operador" {{#if (eq system.patente "Operador")}}selected{{/if}}>Operador</option>
+          <option value="Agente Especial" {{#if (eq system.patente "Agente Especial")}}selected{{/if}}>Agente Especial</option>
+          <option value="Veterano" {{#if (eq system.patente "Veterano")}}selected{{/if}}>Veterano</option>
+        </select>
+      </div>
+    </div>
+  </section>
+</form>

@@ -1,0 +1,388 @@
+/* Renascimento RPG - Estilos para o Foundry VTT */
+
+:root {
+  --color-primary: #bb86fc;
+  --color-primary-variant: #3700b3;
+  --color-secondary: #03dac6;
+  --color-background: #121212;
+  --color-surface: #1e1e1e;
+  --color-surface-variant: #2d2d2d;
+  --color-error: #cf6679;
+  --color-success: #4caf50;
+  --color-warning: #ff9800;
+  --color-text-primary: rgba(255, 255, 255, 0.87);
+  --color-text-secondary: rgba(255, 255, 255, 0.6);
+  --color-border: rgba(255, 255, 255, 0.12);
+}
+
+/* Estilos gerais da ficha */
+.window-app .window-content {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: 'Roboto', sans-serif;
+}
+
+.sheet-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 10px;
+}
+
+.sheet-header .profile-img {
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+  border: 1px solid var(--color-border);
+}
+
+.sheet-header .header-fields {
+  flex: 1;
+}
+
+.sheet-header h1 {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.sheet-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sheet-tabs .item {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+}
+
+.sheet-tabs .item.active {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+.sheet-body {
+  overflow: hidden;
+}
+
+.tab {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Atributos */
+.atributos-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.atributo {
+  background: var(--color-surface);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  position: relative;
+}
+
+.atributo-label {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: 5px;
+}
+
+.atributo-valor {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.atributo-roll {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.atributo-roll:hover {
+  color: var(--color-primary);
+}
+
+/* Recursos (PV, PE, SAN) */
+.recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.recurso {
+  background: var(--color-surface);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.recurso-label {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: 5px;
+}
+
+.recurso-valor {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recurso-valor input {
+  width: 50px;
+  text-align: center;
+  background: var(--color-surface-variant);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  border-radius: 3px;
+}
+
+.pv {
+  color: #4caf50;
+}
+
+.pe {
+  color: #2196f3;
+}
+
+.san {
+  color: #9c27b0;
+}
+
+/* Perícias */
+.pericias-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.pericia {
+  display: flex;
+  align-items: center;
+  background: var(--color-surface);
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid var(--color-border);
+}
+
+.pericia-label {
+  flex: 1;
+}
+
+.pericia-valor {
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.pericia-treinamento {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pericia-treinamento.treinado {
+  background: var(--color-primary);
+}
+
+.pericia-treinamento.expert {
+  background: var(--color-secondary);
+}
+
+.pericia-roll {
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.pericia-roll:hover {
+  color: var(--color-primary);
+}
+
+/* Equipamentos */
+.items-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item-image {
+  flex: 0 0 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item-name {
+  flex: 1;
+  margin: 0;
+  cursor: pointer;
+}
+
+.item-desc {
+  flex: 0 0 100px;
+  text-align: right;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.item-controls {
+  flex: 0 0 60px;
+  text-align: right;
+}
+
+.item-control {
+  margin-left: 5px;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+}
+
+.item-control:hover {
+  color: var(--color-primary);
+}
+
+/* Botões e Inputs */
+button {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-primary-variant);
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* Rolagem de dados */
+.roll-button {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.roll-button:hover {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+/* Seções */
+.equipamentos-section,
+.poderes-section,
+.biografia-section {
+  margin-bottom: 15px;
+}
+
+.equipamentos-section h3,
+.poderes-section h3,
+.biografia-section h3 {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.defesa-section,
+.graus-section {
+  background: var(--color-surface);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.defesa-label,
+.graus-label {
+  font-weight: bold;
+  color: var(--color-text-secondary);
+}
+
+.defesa-valor input {
+  width: 50px;
+  text-align: center;
+  background: var(--color-surface-variant);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.graus-info {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .atributos-grid,
+  .recursos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pericias-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "RENASCIMENTO.Nome": "Renascimento RPG",
+  
+  "RENASCIMENTO.Atributos": {
+    "Agilidade": "Agilidade",
+    "Forca": "Força",
+    "Intelecto": "Intelecto",
+    "Presenca": "Presença",
+    "Vigor": "Vigor"
+  },
+  
+  "RENASCIMENTO.Recursos": {
+    "PV": "Pontos de Vida",
+    "PE": "Pontos de Esforço",
+    "SAN": "Sanidade"
+  },
+  
+  "RENASCIMENTO.Pericias": {
+    "Acrobacia": "Acrobacia",
+    "Adestramento": "Adestramento",
+    "Artes": "Artes",
+    "Atletismo": "Atletismo",
+    "Atualidades": "Atualidades",
+    "Ciencias": "Ciências",
+    "Crime": "Crime",
+    "Diplomacia": "Diplomacia",
+    "Enganacao": "Enganação",
+    "Fortitude": "Fortitude",
+    "Furtividade": "Furtividade",
+    "Iniciativa": "Iniciativa",
+    "Intimidacao": "Intimidação",
+    "Intuicao": "Intuição",
+    "Investigacao": "Investigação",
+    "Luta": "Luta",
+    "Medicina": "Medicina",
+    "Ocultismo": "Ocultismo",
+    "Percepcao": "Percepção",
+    "Pontaria": "Pontaria",
+    "Profissao": "Profissão",
+    "Reflexos": "Reflexos",
+    "Religiao": "Religião",
+    "Sobrevivencia": "Sobrevivência",
+    "Tatica": "Tática",
+    "Tecnologia": "Tecnologia",
+    "Vontade": "Vontade"
+  },
+  
+  "RENASCIMENTO.Patentes": {
+    "Recruta": "Recruta",
+    "Operador": "Operador",
+    "AgenteEspecial": "Agente Especial",
+    "Veterano": "Veterano"
+  },
+  
+  "RENASCIMENTO.TiposItem": {
+    "Arma": "Arma",
+    "Protecao": "Proteção",
+    "Item": "Item",
+    "Poder": "Poder",
+    "Origem": "Origem",
+    "Trilha": "Trilha"
+  },
+  
+  "RENASCIMENTO.Acoes": {
+    "Padrao": "Padrão",
+    "Movimento": "Movimento",
+    "Completa": "Completa",
+    "Reacao": "Reação",
+    "Livre": "Livre"
+  },
+  
+  "RENASCIMENTO.TiposDano": {
+    "Balistico": "Balístico",
+    "Corte": "Corte",
+    "Impacto": "Impacto",
+    "Perfuracao": "Perfuração",
+    "Energia": "Energia",
+    "Conhecimento": "Conhecimento",
+    "Morte": "Morte",
+    "Sangue": "Sangue",
+    "Medo": "Medo"
+  }
+}
